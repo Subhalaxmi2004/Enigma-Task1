@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.container{
+    width:100%;
+    height:100vh;
+    border: 2px solid red;
+    display: flex;
+    flex-direction:column ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.box{
+    width:100%;
+   /* border:2px solid green;*/
+   height:9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+p{
+    font-size:4em;
+    animation: ani 1.4s linear infinite;
+    animation-delay: 0s;
+    font-style:'Lobster', cursive;
+}
+a:link{
+    font-size: 5em;
+}
+
+@keyframes ani{
+    0%{
+        color:#484848;
+        text-shadow: none;
+        text-transform: none;
+    }  90%{
+        color:#1078d3;
+        text-shadow: none;
+        text-transform: uppercase;
+
+    }
+    100%{
+        color:#FFFFFF;
+        text-shadow:0 0 7px #1078d3;
+        text-transform: uppercase;
+
+    }
+}
+a:link:hover{
+    background: blue;
+    color:black;
+    box-shadow: 0 0 5px yellow,
+                0 0 25px yellow,
+                0 0 50px yellow,
+                0 0 200px yellow;
+}
+
+@media  screen and (max-width: 992px) {
+    p{
+        font-size:1em;
+        animation:ani 2s linear infinite;
+
+    }
+    a:link{
+        font-size: 1em;
+    }
+    
+}

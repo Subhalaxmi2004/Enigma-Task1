@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;   
+}
+.container{
+    width:100%;
+    background:#622569;
+
+}
+.container .apple .bana{
+    width:80%;
+    margin:0 auto;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 20px;
+}
+.container .apple .bana .gallery{
+    width: 100%;
+    position: relative;
+}
+
+.container .apple .bana .gallery .box{
+    width:100%;
+}
+.container .apple .bana .gallery .box img{
+    width:100%;
+    height:auto;
+    border:1px solid #ddd;
+    padding:5px;
+    display: block;
+}
+.container .apple .bana .gallery .caption{
+    font-family:'Lobster', cursive; ;
+    height:100%;
+    width:100%;
+    position: absolute;
+    padding: 15px;
+    top:0;
+    left:0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(0deg,#ff0000,#000000);
+    color:#fff;
+    opacity:0;
+    transition:opacity 0.3s;
+}
+.container .apple .bana .gallery .caption:hover{
+    opacity: 1;
+   /* animation:animate 5s linear infinite;*/
+
+}
+.container .apple .bana .gallery .caption:hover p{
+    font-size: 14px;
+}
+a:link:hover{ background: blue;
+    color:black;
+    box-shadow: 0 0 5px yellow,
+                0 0 25px yellow,
+                0 0 50px yellow,
+                0 0 200px yellow;
+}
+
+@media screen and (max-width:992px) {
+    .container .apple .bana{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+    
+}
+
+
+@media screen and (max-width:992px) {
+    .container .apple .bana{
+        grid-template-columns:1fr;
+    }  
+}
